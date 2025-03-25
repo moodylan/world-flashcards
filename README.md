@@ -1,6 +1,6 @@
-# *Where in the World? 🌎 Flashcard Game
+# Where in the World? 🌎 Flashcard Game
 
-***Where in the World?** is an interactive flashcard web app built with React where users guess the names of famous (and not-so-famous) locations from around the world. Designed to be fun, educational, and visually engaging, the app features smooth animations, streak tracking, and intelligent answer validation.
+**Where in the World?** is an interactive flashcard web app built with React where users guess the names of famous (and not-so-famous) locations from around the world. Designed to be fun, educational, and visually engaging, the app features smooth animations, streak tracking, and intelligent answer validation.
 
 ## Features
 
