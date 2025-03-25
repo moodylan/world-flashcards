@@ -1,0 +1,133 @@
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(
+    142deg,
+    #cdb27c,
+    #947b41,
+    #2b4343,
+    #002121,
+    #001414
+  );
+  background-size: 260% 260%;
+  animation: gradient-animation 25s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 75%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app {
+  text-align: center;
+  height: 90vh;
+}
+
+body {
+  margin: 0;
+  padding: 3em;
+  color: #ffffff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.05em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0.25em;
+}
+
+button {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+.prev-button:hover,
+.next-button:hover,
+.shuffle-button:hover {
+  transform: scale(0.96);
+  background: rgba(0, 0, 0);
+}
+.prev-button:active,
+.next-button:active,
+.shuffle-button:active {
+  transform: scale(0.92);
+}
+.submit-button:hover {
+  background: rgba(0, 0, 0);
+}
+.shuffle-button,
+.prev-button,
+.next-button {
+  margin-top: 0.3em;
+  padding: 0.6em 1.5em;
+}
+.prev-button,
+.shuffle-button {
+  margin-right: 0.5em;
+}
+.streaks {
+  margin-bottom: 1.5em;
+  max-width: 20em;
+  color: #dbdbdb;
+}
+
+.user-input-form {
+  margin-top: 1.55em;
+}
+
+input {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0.85em 3.7em 0.75em 1.2em;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  font-size: 0.9em;
+  width: 8em;
+  color: #ffffff;
+}
+
+.submit-button {
+  border-radius: 0px 10px 10px 0px;
+  padding: 0.7em 0.8em;
+  margin-left: -37px;
+}
+
+.feedback {
+  min-height: 20px;
+  font-size: 0.85em;
+  margin-top: 0.2em;
+}

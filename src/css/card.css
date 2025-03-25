@@ -1,0 +1,98 @@
+.app,
+.card-placeholder,
+.flip-card-front,
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card,
+.card-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card {
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateX(180deg);
+}
+
+.card-placeholder {
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.flip-card-front,
+.flip-card-back {
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: #2b4343;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front.city,
+.flip-card-back.city {
+  border: 6px solid #d8e1f1;
+  background: #d8e1f1;
+}
+
+.flip-card-front.nature,
+.flip-card-back.nature {
+  border: 6px solid #daecd4;
+  background: #daecd4;
+}
+
+.flip-card-front.landmark,
+.flip-card-back.landmark {
+  border: 6px solid #e4dac7;
+  background: #e4dac7;
+}
+
+.category-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
